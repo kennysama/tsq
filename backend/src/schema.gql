@@ -1,0 +1,30 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Post {
+  id: Int!
+  title: String!
+  order: Float!
+}
+
+type Query {
+  posts: [Post!]!
+  getPost(id: Int!): Post!
+}
+
+type Mutation {
+  createPost(createPostInput: CreatePostInput!): Post!
+  updatePost(updatePostInput: UpdatePostInput!): Post!
+}
+
+input CreatePostInput {
+  title: String!
+  order: Float!
+}
+
+input UpdatePostInput {
+  id: Float!
+  title: String!
+  order: Float!
+}
